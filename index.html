@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil's Portfolio</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" href="https://www.crushpixel.com/static18/preview2/portfolio-sketch-neon-icon-simple-3020478.jpg">
+</head>
+<style>
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .active:nth-child(1) {
+        padding: 10px;
+    }
+</style>
+
+<body>
+
+    <!-- -----------------------------------NAVBAR---------------------------- -->
+
+    <nav
+        class="navbar flex justify-around items-center px-0 md:py-2 bg-black py-3 fixed top-0 w-full shadow-sm shadow-white z-40">
+        <div class="logo font-bold text-2xl md:text-4xl font-serif bg-black ">
+            <span class="text-yellow-300 ">Sahil's </span><span class="text-white"> Portfolio</span>
+        </div>
+        <ul
+            class="nav-items transition-all duration-500 flex-col absolute md:static md:w-auto md:text-xl md:flex-row -top-72 items-center bg-black w-full md:flex flex z-50">
+            <li class="list-items px-4 font-bold capitalize py-4">
+                <a href="#home" class="tracking-widest text-yellow-300">home</a>
+            </li>
+            <li class="list-items px-4 font-bold capitalize py-4">
+                <a href="#about" class="tracking-widest text-yellow-300">about</a>
+            </li>
+            <li class="list-items px-4 font-bold capitalize py-4">
+                <a href="#skills" class="tracking-widest text-yellow-300">skills</a>
+            </li>
+            <li class="list-items px-4 font-bold capitalize py-4">
+                <a href="#projects" class="tracking-widest text-yellow-300">projects</a>
+            </li>
+            <li class="list-items px-4 font-bold capitalize py-4">
+                <a href="#" class="tracking-widest text-yellow-300">contact me</a>
+            </li>
+        </ul>
+        <div class="md:hidden cursor-pointer active" onclick="showMenu()">
+            <span class="h-0.5 w-5 bg-white block"></span>
+            <span class="h-0.5 w-5 bg-white block my-1"></span>
+            <span class="h-0.5 w-5 bg-white block"></span>
+        </div>
+    </nav>
+
+
+
+    <!-- ---------------------------------HOME SECTION ---------------------------------- -->
+
+
+
+    <section id="home"
+        class="md:h-screen h-custom mt-xxl md:pt-2 md:mt-16 pt-0 bg-black flex flex-col-reverse md:flex-row pb-2">
+        <div
+            class="text md:text-5xl text-3xl md:tracking-wider font-semibold  text-white tracking-tighter font-serif md:w-1/2 flex flex-col items-center justify-center">
+            <div class="pl-4">
+                <div>Hi, I'm <i class="text-yellow-300">Sahil kumar &nbsp;&nbsp;&nbsp;</i></div>
+                <div class="my-4">and I'm a</div>
+                <span id="element" class="mt-2  text-yellow-300 font-bold"></span>
+                <div class="mt-8 md:mt-6 ">
+                    <button
+                        class="bg-yellow-300 text-sm md:text-lg p-1 md:px-2 md:py-2 text-black rounded-full hover:bg-yellow-400 border-2 border-solid border-white hover:text-white mr-4">Hire
+                        Me</button>
+                    <button
+                        class="bg-yellow-300 text-sm md:text-lg p-1 md:px-2 md:py-2 text-black rounded-full hover:bg-yellow-400 border-2 border-solid border-white hover:text-white">Download
+                        CV</button>
+                </div>
+            </div>
+        </div>
+        <div class="photo h-full md:w-1/2 w-full flex items-center justify-center">
+            <div class="md:w-full w-60 flex items-center justify-center">
+                <img src="/img/my profile photo.jpg" class=" rounded-full p-4 md:w-1/2 border-2 border-solid border-white">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ---------------------------------ABOUT------------------------------------- -->
+
+    <section id="about" class="bg-black text-white pt-4">
+        <h1 class="text-2xl md:text-4xl font-bold text-center">ABOUT</h1>
+    </section>
+
+
+
+    <!-- ---------------------------------SKILLS------------------------------------------- -->
+
+    <section id="skills" class="bg-black text-white w-full py-5">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-yellow-300">SKILLS</h1>
+        <div class="w-full font-bold md:grid md:grid-cols-2 md:text-2xl md:place-items-center">
+            <div class="md:w-10/12 ">
+                <div class="w-full px-4 my-4 skill-1">
+                    <div class="w-full flex justify-between py-2">
+                        <div class="">HTML</div>
+                        <div class="">80%</div>
+                    </div>
+                    <div class="w-full h-2 bg-gray-700 rounded-full">
+                        <div class="w-4/5 h-full rounded-full bg-yellow-300"></div>
+                    </div>
+                </div>
+                <div class="w-full px-4 my-4 skill-2">
+                    <div class="w-full flex justify-between py-2 ">
+                        <div class="">CSS</div>
+                        <div class="">95%</div>
+                    </div>
+                    <div class="w-full h-2 bg-gray-700 rounded-full">
+                        <div class="w-11/12 h-full rounded-full bg-yellow-300"></div>
+                    </div>
+                </div>
+                <div class="w-full px-4 my-4 skill-3">
+                    <div class="w-full flex justify-between py-2">
+                        <div class="">JAVASCRIPT</div>
+                        <div class="">75%</div>
+                    </div>
+                    <div class="w-full h-2 bg-gray-700 rounded-full">
+                        <div class="w-3/4 h-full rounded-full bg-yellow-300"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-10/12 ">
+                <div class="w-full px-4 my-4 skill-4">
+                    <div class="w-full flex justify-between py-2">
+                        <div class="">REACT JS</div>
+                        <div class="">60%</div>
+                    </div>
+                    <div class="w-full h-2 bg-gray-700 rounded-full">
+                        <div class="w-3/5 h-full rounded-full bg-yellow-300"></div>
+                    </div>
+                </div>
+                <div class="w-full px-4 my-4 skill-5">
+                    <div class="w-full flex justify-between py-2">
+                        <div class="">C++</div>
+                        <div class="">50%</div>
+                    </div>
+                    <div class="w-full h-2 bg-gray-700 rounded-full">
+                        <div class="w-1/2 h-full rounded-full bg-yellow-300"></div>
+                    </div>
+                </div>
+                <div class="w-full px-4 my-4 skill-6">
+                    <div class="w-full flex justify-between py-2">
+                        <div class="">MONGO DB</div>
+                        <div class="">20%</div>
+                    </div>
+                    <div class="w-full h-2 bg-gray-700 rounded-full">
+                        <div class="w-1/5 h-full rounded-full bg-yellow-300"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- ---------------------------------PROJECTS-------------------------------------- -->
+
+    <section id="projects" class="bg-black text-white py-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-yellow-300">PROJECTS</h1>
+        <div class="flex justify-center mt-8">
+            <div class="project-1 border-2 border-solid border-yellow-300 w-11/12 p-2 ">
+                <div class="w-full p-1 h-40 border-2 border-solid border-white object-contain">
+                    <img src="/img/tic-tac-toe.png" class="w-full h-full object-contain">
+                </div>
+                <div class="font-bold text-2xl text-yellow-300">
+                    Tic-Tac-Toe Game
+                </div>
+                <div class="description font-thin text-xs text-gray-200">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a nisi possimus iure quae neque molestias ab labore laboriosam! Accusantium?
+                </div>
+                <div class=" flex justify-between">
+                    <button class="border-2 border-solid border-yellow-300 rounded-full text-xs p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a href="https://sahiltic-tac-toegame.netlify.app/" target="_blank">View Project</a></button>
+                    <button class="border-2 border-solid border-yellow-300 rounded-full text-xs p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a href="" target="_blank">Get Source Code</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
