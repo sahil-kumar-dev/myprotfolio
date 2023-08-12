@@ -1,6 +1,7 @@
 const nav_item=document.querySelector('.nav-items');
 const list_items=document.querySelectorAll('.list-items');
 const links=document.querySelectorAll('.nav-items li a');
+const menu=document.querySelector('.menu');
 
 
 links.forEach((link)=>{
@@ -14,8 +15,21 @@ links.forEach((link)=>{
     })
 })
 
+// window.addEventListener('scroll',()=>{
+//     if(window.pageYOffset>465 && window.pageYOffset<850){
+//         links.forEach((li)=>{
+//             li.classList.remove('active')
+//         })
+//         links[2].classList.add('active');
+//     }
+//     if(window.pageYOffset>0 && window.pageYOffset<465){
+//         links.forEach((li)=>{
+//             li.classList.remove('active')
+//         })
+//         links[0].classList.add('active');
 
-const menu=document.querySelector('.menu');
+//     }
+// })
 
 
 function showMenu(){
@@ -71,7 +85,7 @@ window.addEventListener('load',()=>{
 var typed = new Typed('#element', {
     strings: ['Front-end Developer', 'Back-end Developer','Problem Solver','Web Designer'],
     typeSpeed: 50,
-    backSpeed:80,
+    backSpeed:30,
     loop:true
   });
 
@@ -98,3 +112,9 @@ ScrollReveal().reveal('.skill-6', { delay: 1200, origin: 'bottom', reset: true }
 // -------------------------projects--------------------------
 ScrollReveal().reveal('.project-1', { delay: 400, origin: 'bottom', reset: true });
 ScrollReveal().reveal('.project-2', { delay: 800, origin: 'bottom', reset: true });
+
+
+// -------------------------education detialis-------------------
+ScrollReveal().reveal('.education-1', { delay: 400, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.education-2', { delay: 800, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.education-3', { delay: 1000, origin: 'bottom', reset: true });
