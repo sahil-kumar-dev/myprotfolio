@@ -77,7 +77,8 @@
         </div>
         <div class="photo h-full md:w-1/2 w-full flex items-center justify-center">
             <div class="md:w-full w-60 flex items-center justify-center">
-                <img src="/img/my profile photo.jpg" class=" rounded-full p-4 md:w-1/2 border-2 border-solid border-white">
+                <img src="/img/my profile photo.jpg"
+                    class=" rounded-full p-4 md:w-1/2 border-2 border-solid border-white">
             </div>
         </div>
     </section>
@@ -165,20 +166,54 @@
 
     <section id="projects" class="bg-black text-white py-8">
         <h1 class="text-3xl md:text-4xl font-bold text-center text-yellow-300">PROJECTS</h1>
-        <div class="flex justify-center mt-8">
-            <div class="project-1 border-2 border-solid border-yellow-300 w-11/12 p-2 ">
-                <div class="w-full p-1 h-40 border-2 border-solid border-white object-contain">
+        <div class="flex justify-center flex-col items-center mt-8">
+            <div class="project-1 border-2 border-solid border-yellow-300 w-11/12 p-2 md:flex md:w-7/12"  >
+                <div class="w-full p-1 h-40 md:h-80 border-2 border-solid border-white object-contain">
                     <img src="/img/tic-tac-toe.png" class="w-full h-full object-contain">
                 </div>
-                <div class="font-bold text-2xl text-yellow-300">
-                    Tic-Tac-Toe Game
+                <div class="md:ml-2 relative">
+                    <div class="font-bold text-2xl text-yellow-300 md:text-4xl ">
+                        Tic-Tac-Toe Game
+                    </div>
+                    <div class="description font-thin text-xs md:text-lg md:mt-4 text-gray-200">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a nisi possimus iure quae neque
+                        molestias ab labore laboriosam! Accusantium?
+                    </div>
+                    <div class=" flex justify-between text-xs md:text-lg md:absolute bottom-2 w-full">
+                        <button
+                            class="border-2 border-solid border-yellow-300 rounded-full p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
+                                href="https://sahiltic-tac-toegame.netlify.app/" target="_blank">View
+                                Project</a></button>
+                        <button
+                            class="border-2 border-solid border-yellow-300 rounded-full  p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
+                                href="" target="_blank">Get Source Code</a></button>
+                    </div>
                 </div>
-                <div class="description font-thin text-xs text-gray-200">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a nisi possimus iure quae neque molestias ab labore laboriosam! Accusantium?
+            </div>
+
+
+
+            <div class="project-2 border-2 border-solid border-yellow-300 w-11/12 p-2 md:flex md:w-7/12 my-12"  >
+                <div class="w-full p-1 h-40 md:h-80 border-2 border-solid border-white object-contain">
+                    <img src="/img/weather app.png" class="w-full h-full object-contain">
                 </div>
-                <div class=" flex justify-between">
-                    <button class="border-2 border-solid border-yellow-300 rounded-full text-xs p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a href="https://sahiltic-tac-toegame.netlify.app/" target="_blank">View Project</a></button>
-                    <button class="border-2 border-solid border-yellow-300 rounded-full text-xs p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a href="" target="_blank">Get Source Code</a></button>
+                <div class="md:ml-2 relative">
+                    <div class="font-bold text-2xl text-yellow-300 md:text-4xl ">
+                        Weather app
+                    </div>
+                    <div class="description font-thin text-xs md:text-lg md:mt-4 text-gray-200">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a nisi possimus iure quae neque
+                        molestias ab labore laboriosam! Accusantium?
+                    </div>
+                    <div class=" flex justify-between text-xs md:text-lg md:absolute bottom-2 w-full">
+                        <button
+                            class="border-2 border-solid border-yellow-300 rounded-full p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
+                                href="https://my-newweatherapp.netlify.app/" target="_blank">View
+                                Project</a></button>
+                        <button
+                            class="border-2 border-solid border-yellow-300 rounded-full  p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
+                                href="" target="_blank">Get Source Code</a></button>
+                    </div>
                 </div>
             </div>
         </div>

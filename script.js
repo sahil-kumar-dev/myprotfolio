@@ -65,16 +65,17 @@ ScrollReveal({
 ScrollReveal().reveal('.navbar', { delay: 200, origin: 'top' });
 ScrollReveal().reveal('.logo', { delay: 600, origin: 'left', reset: false });
 ScrollReveal().reveal('.text', { delay: 800, origin: 'left', reset: true });
-ScrollReveal().reveal('.photo', { delay: 800, origin: 'right', reset: true });
+ScrollReveal().reveal('.photo', { delay: 800, origin: 'top', reset: true });
 
 // -----------------------skill section ---------------------
-ScrollReveal().reveal('.skill-1', { delay: 400, origin: 'left', reset: true });
-ScrollReveal().reveal('.skill-2', { delay: 800, origin: 'left', reset: true });
-ScrollReveal().reveal('.skill-3', { delay: 1200, origin: 'left', reset: true });
-ScrollReveal().reveal('.skill-4', { delay: 600, origin: 'right', reset: true });
-ScrollReveal().reveal('.skill-5', { delay: 1000, origin: 'right', reset: true });
-ScrollReveal().reveal('.skill-6', { delay: 1400, origin: 'right', reset: true });
+ScrollReveal().reveal('.skill-1', { delay: 400, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.skill-2', { delay: 600, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.skill-3', { delay: 800, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.skill-4', { delay: 1000, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.skill-5', { delay: 1100, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.skill-6', { delay: 1200, origin: 'bottom', reset: true });
 
 
 // -------------------------projects--------------------------
 ScrollReveal().reveal('.project-1', { delay: 400, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.project-2', { delay: 800, origin: 'bottom', reset: true });
