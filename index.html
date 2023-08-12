@@ -5,15 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahil's Portfolio</title>
     <link rel="stylesheet" href="output.css">
-    <link rel="icon" href="https://www.crushpixel.com/static18/preview2/portfolio-sketch-neon-icon-simple-3020478.jpg">
+    <!-- <link rel="icon" href="https://www.crushpixel.com/static18/preview2/portfolio-sketch-neon-icon-simple-3020478.jpg"> -->
 </head>
 <style>
     body::-webkit-scrollbar {
         display: none;
     }
 
-    .active:nth-child(1) {
-        padding: 10px;
+    * {
+        -webkit-tap-highlight-color: rgba(255,255,255,0) !important;
+        -webkit-focus-ring-color: rgba(255, 255, 255,0) !important;
+        outline: none !important;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .active {
+        border-bottom: 3px solid yellow;
+    }
+
+    .top-14 {
+        top: 3rem;
+    }
+
+    .menu.active-menu .bar-1 {
+        transform: rotate(45deg) translateX(4px) translateY(3px);
+    }
+
+    .menu.active-menu .bar-2 {
+        opacity: 0;
+    }
+
+    .menu.active-menu .bar-3 {
+        transform: rotate(-45deg) translateY(-5px) translateX(5px);
     }
 </style>
 
@@ -28,8 +54,8 @@
         </div>
         <ul
             class="nav-items transition-all duration-500 flex-col absolute md:static md:w-auto md:text-xl md:flex-row -top-72 items-center bg-black w-full md:flex flex z-50">
-            <li class="list-items px-4 font-bold capitalize py-4">
-                <a href="#home" class="tracking-widest text-yellow-300">home</a>
+            <li class="list-items px-4 font-bold capitalize py-4 ">
+                <a href="#home" class="tracking-widest text-yellow-300 active">home</a>
             </li>
             <li class="list-items px-4 font-bold capitalize py-4">
                 <a href="#about" class="tracking-widest text-yellow-300">about</a>
@@ -41,13 +67,13 @@
                 <a href="#projects" class="tracking-widest text-yellow-300">projects</a>
             </li>
             <li class="list-items px-4 font-bold capitalize py-4">
-                <a href="#" class="tracking-widest text-yellow-300">contact me</a>
+                <a href="#" class="tracking-widest text-yellow-300 ">contact me</a>
             </li>
         </ul>
-        <div class="md:hidden cursor-pointer active" onclick="showMenu()">
-            <span class="h-0.5 w-5 bg-white block"></span>
-            <span class="h-0.5 w-5 bg-white block my-1"></span>
-            <span class="h-0.5 w-5 bg-white block"></span>
+        <div class="md:hidden cursor-pointer menu" onclick="showMenu(this)">
+            <div class="bar-1 transition-all duration-200 h-0.5 w-5 bg-white block"></div>
+            <div class="bar-2 transition-all duration-200 h-0.5 w-5 bg-white block my-1"></div>
+            <div class="bar-3 transition-all duration-200 h-0.5 w-5 bg-white block"></div>
         </div>
     </nav>
 
@@ -94,7 +120,7 @@
 
     <!-- ---------------------------------SKILLS------------------------------------------- -->
 
-    <section id="skills" class="bg-black text-white w-full py-5">
+    <section id="skills" class="bg-black text-white w-full pt-24 pb-4">
         <h1 class="text-3xl md:text-4xl font-bold text-center text-yellow-300">SKILLS</h1>
         <div class="w-full font-bold md:grid md:grid-cols-2 md:text-2xl md:place-items-center">
             <div class="md:w-10/12 ">
@@ -164,10 +190,10 @@
 
     <!-- ---------------------------------PROJECTS-------------------------------------- -->
 
-    <section id="projects" class="bg-black text-white py-8">
+    <section id="projects" class="bg-black text-white pt-24">
         <h1 class="text-3xl md:text-4xl font-bold text-center text-yellow-300">PROJECTS</h1>
         <div class="flex justify-center flex-col items-center mt-8">
-            <div class="project-1 border-2 border-solid border-yellow-300 w-11/12 p-2 md:flex md:w-7/12"  >
+            <div class="project-1 border-2 border-solid border-yellow-300 w-11/12 p-2 md:flex md:w-7/12">
                 <div class="w-full p-1 h-40 md:h-80 border-2 border-solid border-white object-contain">
                     <img src="/img/tic-tac-toe.png" class="w-full h-full object-contain">
                 </div>
@@ -193,7 +219,7 @@
 
 
 
-            <div class="project-2 border-2 border-solid border-yellow-300 w-11/12 p-2 md:flex md:w-7/12 my-12"  >
+            <div class="project-2 border-2 border-solid border-yellow-300 w-11/12 p-2 md:flex md:w-7/12 my-12">
                 <div class="w-full p-1 h-40 md:h-80 border-2 border-solid border-white object-contain">
                     <img src="/img/weather app.png" class="w-full h-full object-contain">
                 </div>

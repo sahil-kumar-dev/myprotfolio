@@ -1,5 +1,22 @@
 const nav_item=document.querySelector('.nav-items');
 const list_items=document.querySelectorAll('.list-items');
+const links=document.querySelectorAll('.nav-items li a');
+
+
+links.forEach((link)=>{
+    link.addEventListener('click',()=>{
+        if(!link.classList.contains('active')){
+            links.forEach((li)=>{
+                li.classList.remove('active')
+            })
+            link.classList.add('active')
+        }
+    })
+})
+
+
+const menu=document.querySelector('.menu');
+
 
 function showMenu(){
     if(nav_item.classList.contains('top-14')){
@@ -8,12 +25,14 @@ function showMenu(){
     else{
         nav_item.classList.replace('-top-72','top-14');
     }
+    menu.classList.toggle('active-menu')
 }
 
 list_items.forEach((item)=>{
     item.addEventListener('click',()=>{
-       if(nav_item.classList.contains('top-14')) {
+        if(nav_item.classList.contains('top-14')) {
             nav_item.classList.replace('top-14','-top-72');
+            menu.classList.remove('active-menu')
         }
     })
 })
