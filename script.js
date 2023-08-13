@@ -97,7 +97,7 @@ ScrollReveal({
 })
 ScrollReveal().reveal('.navbar', { delay: 200, origin: 'top' });
 ScrollReveal().reveal('.logo', { delay: 600, origin: 'left', reset: false });
-ScrollReveal().reveal('.text', { delay: 800, origin: 'left', reset: true });
+ScrollReveal().reveal('.text1', { delay: 800, origin: 'left', reset: true });
 ScrollReveal().reveal('.photo', { delay: 800, origin: 'top', reset: true });
 
 // -----------------------skill section ---------------------
@@ -112,9 +112,30 @@ ScrollReveal().reveal('.skill-6', { delay: 1200, origin: 'bottom', reset: true }
 // -------------------------projects--------------------------
 ScrollReveal().reveal('.project-1', { delay: 400, origin: 'bottom', reset: true });
 ScrollReveal().reveal('.project-2', { delay: 800, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.project-3', { delay: 400, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.project-4', { delay: 800, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.project-5', { delay: 400, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.project-6', { delay: 800, origin: 'bottom', reset: true });
 
 
 // -------------------------education detialis-------------------
 ScrollReveal().reveal('.education-1', { delay: 400, origin: 'bottom', reset: true });
 ScrollReveal().reveal('.education-2', { delay: 800, origin: 'bottom', reset: true });
 ScrollReveal().reveal('.education-3', { delay: 1000, origin: 'bottom', reset: true });
+// ------------------------------contact me------------------------
+// ScrollReveal().reveal('.right', { delay:400, origin: 'left', reset: true });
+// ScrollReveal().reveal('.left', { delay: 400, origin: 'right', reset: true });
+
+// ------------------------------icons ------------------------
+ScrollReveal().reveal('.icon-1', { delay:400, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.icon-2', { delay:600, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.icon-3', { delay:800, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.icon-4', { delay:1000, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.icon-5', { delay:1200, origin: 'bottom', reset: true });
+
+
+// ------------------------------form------------------------
+ScrollReveal().reveal('.text', { delay:200, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.email', { delay:400, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.number', { delay:800, origin: 'bottom', reset: true });
+ScrollReveal().reveal('.submit', { delay:1000, origin: 'bottom', reset: true });

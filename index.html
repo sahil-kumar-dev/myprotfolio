@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahil's Portfolio</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="icon" href="./img/favicon.png">
+    <script src="https://kit.fontawesome.com/9153f1b16d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
@@ -17,6 +19,7 @@
     }
 
     * {
+        -webkit-user-select: none;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
         -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
         outline: none !important;
@@ -45,16 +48,23 @@
     .menu.active-menu .bar-3 {
         transform: rotate(-45deg) translateY(-5px) translateX(5px);
     }
+
+    input:focus~label,
+    input:valid~label {
+        top: -23px;
+        font-size: 0.8rem;
+    }
 </style>
 
-<body class="font-body">
+<body class="font-body bg-black">
 
     <!-- -----------------------------------NAVBAR---------------------------- -->
 
     <nav
         class="navbar flex justify-around items-center px-0 md:py-2 bg-black py-3 fixed top-0 w-full shadow-sm shadow-white z-40">
         <div class="logo tracking-wider font-bold text-2xl md:text-4xl font-serif bg-black font-logo">
-            <span class="text-yellow-300 ">Sahil's </span><span class="text-white"> Portfolio</span>
+            <a href="#home"> <span class="text-yellow-300 ">Sahil's </span><span class="text-white">
+                    Portfolio</span></a>
         </div>
         <ul
             class="font-body nav-items transition-all duration-500 flex-col absolute md:static md:w-auto md:text-xl md:flex-row -top-72 items-center bg-black w-full md:flex flex z-50">
@@ -90,11 +100,12 @@
     <section id="home"
         class="md:h-screen h-custom mt-xxl md:pt-2 md:mt-4 pt-0 bg-black flex flex-col-reverse md:flex-row pb-2">
         <div
-            class="text md:text-5xl text-3xl md:tracking-wider font-semibold  text-white tracking-tighter font-serif md:w-1/2 flex flex-col items-center justify-center">
+            class="text1 md:text-5xl text-3xl md:tracking-wider font-semibold  text-white tracking-tighter font-serif md:w-1/2 flex flex-col items-center justify-center">
             <div class="pl-4">
-                <div>Hi, I'm <span class="text-yellow-300">Sahil kumar &nbsp;&nbsp;&nbsp;</span></div>
+                <div>Hi, I'm <span class="text-yellow-300 underline">Sahil kumar</span><span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
                 <div class="my-4">and I'm a</div>
-                <span id="element" class="mt-2  text-yellow-300 font-bold font-my-text"></span>
+                <span id="element" class="mt-2 tracking-wide text-yellow-300 font-bold font-my-text"></span>
                 <div class="mt-8 md:mt-6 ">
                     <button
                         class="bg-yellow-300 text-sm md:text-lg p-1 md:px-2 md:py-2 text-black rounded-full hover:bg-yellow-400 border-2 border-solid border-white hover:text-white font-bold tracking-wide">Download
@@ -119,7 +130,7 @@
             <div class="my-4">
                 <p class="md:text-2xl font-about text-center">
                     I'm Sahil Kumar from the capital of Bihar , Patna. Currently pursuing my
-                    BCA degree from a C grade College of Commerce,Arts & Science (Session 2022-2025).
+                    BCA degree from one of the best university of Bihar , Patliputra university (Session 2022-2025).
                 </p>
             </div>
         </div>
@@ -127,14 +138,16 @@
             <p class="text-xl md:text-2xl md:font-bold text-yellow-300">EDUCATION DEATAILS</p>
         </div>
         <div class="flex flex-col md:flex-row items-center justify-center px-4 md:px-12">
-            <div class="education-1 md:h-about md:h md:w-4/12 border-2 border-solid border-yellow-300 m-2 p-2 text-center tracking-wide mt-4">
+            <div
+                class="education-1 lg:h-about md:h-auto md:h md:w-4/12 border-2 border-solid border-yellow-300 m-2 p-2 text-center tracking-wide mt-4">
                 <h1 class="md:text-3xl text-2xl text-yellow-300 py-4 font-bold">MATRICULATION (10th)</h1>
                 <p class="font-about md:text-2xl">
                     I've completed my matriculation from a government school , Marwari High School.
                     I've successfully cleared my matriculation exam in the year 2020 with 73% marks.
                 </p>
             </div>
-            <div class="education-2 md:h-about md:h md:w-4/12 border-2 border-solid border-yellow-300 m-2 p-2 text-center tracking-wide mt-4">
+            <div
+                class="education-2 md:h-about md:h md:w-4/12 border-2 border-solid border-yellow-300 m-2 p-2 text-center tracking-wide mt-4">
                 <h1 class="text-2xl md:text-3xl text-yellow-300 py-4 font-bold">INTERMIDIATE (12th)</h1>
                 <p class="font-about md:text-2xl">
                     After clearing my matric exam I've taken addmission in T.P.S COLLEGE to pursue my
@@ -142,7 +155,8 @@
                     scoring 83.2% parks.
                 </p>
             </div>
-            <div class="education-3 md:h-about md:h md:w-4/12 border-2 border-solid border-yellow-300 m-2 p-2 text-center tracking-wide mt-4">
+            <div
+                class="education-3 md:h-about md:h md:w-4/12 border-2 border-solid border-yellow-300 m-2 p-2 text-center tracking-wide mt-4">
                 <h1 class="text-2xl md:text-3xl text-yellow-300 py-4 font-bold">GRADUATION (B.C.A)</h1>
                 <p class="font-about md:text-2xl">
                     After scoring good marks in intermidiate I've taken addmission in College of Commerce to
@@ -249,7 +263,8 @@
                                 Project</a></button>
                         <button
                             class="border-2 border-solid border-yellow-300 rounded-full  p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
-                                href="" target="_blank">Get Source Code</a></button>
+                                href="https://github.com/sahilkumar122/tic-tac-toe" target="_blank">Get Source
+                                Code</a></button>
                     </div>
                 </div>
             </div>
@@ -276,7 +291,8 @@
                                 Project</a></button>
                         <button
                             class="border-2 border-solid border-yellow-300 rounded-full  p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
-                                href="" target="_blank">Get Source Code</a></button>
+                                href="https://github.com/sahilkumar122/myweatharapp" target="_blank">Get Source
+                                Code</a></button>
                     </div>
                 </div>
             </div>
@@ -287,9 +303,55 @@
     <!-- ---------------------------------CONTACT ME------------------------------------- -->
 
     <section id="contact" class="bg-black text-white pt-24">
-        <h1 class="md:text-4xl text-3xl font-bold text-yellow-300 text-center">CONTACT ME</h1>
+        <h1 class="my-8 md:text-4xl text-3xl font-bold text-yellow-300 text-center">CONTACT ME</h1>
+        <div class="flex flex-col md:flex-row-reverse md:py-12 ">
+            <div class="form md:w-1/2 md:h-auto left">
+                <form method="get" name="netlify" action="formSubmit.html"
+                    class="flex flex-col items-center border-2 border-double border-yellow-300 py-4 px-8 m-2 "
+                    data-netlify="true">
+                    <div class="text relative border-b-2 border-solid border-yellow-300 w-4/5 my-8">
+                        <input type="text" name="name" id="username" class="bg-black w-full" required>
+                        <label for="username"
+                            class="text-yellow-300 transition-all duration-500 absolute top-0 left-0">Your
+                            Name</label>
+                    </div>
+                    <div class="email relative border-b-2 border-solid border-yellow-300 w-4/5 my-8">
+                        <input type="text" name="email" id="mail" class="bg-black w-full" required>
+                        <label for="mail" class="text-yellow-300 transition-all duration-500 absolute top-0 left-0">Your
+                            Email-Id</label>
+                    </div>
+                    <div class="number relative border-b-2 border-solid border-yellow-300 w-4/5 my-8">
+                        <input type="text" name="contact no." id="contact" class="bg-black w-full" required>
+                        <label for="contact"
+                            class="text-yellow-300 transition-all duration-500 absolute top-0 left-0">Your
+                            contact No.</label>
+                    </div>
+                    <div class="submit">
+                      <!-- <a href="formSubmit.html" >  -->
+                         <button type="submit" 
+                            class="border-2 border-solid bg-yellow-300 px-2 py-1 text-black font-bold rounded-md">SUBMIT</button>
+                        <!-- </a> -->
+                    </div>
+                </form>
+            </div>
+            <div class="right social-links md:w-1/2 p-4  m-2 border-2 border-solid border-yellow-300">
+                <h2 class="my-4 text-2xl md:text-3xl font-bold text-center tracking-wider text-yellow-300">Social Links</h2>
+                <div class="relative flex items-center justify-around py-4 md:block ">
+                    <a href="" class="icon-1 md:absolute top-5 left-5"><i class="fa-brands fa-facebook text-4xl md:text-5xl hover:scale-105"></i></a>
+                    <a href="" class="icon-2 md:absolute top-32 left-36"><i class="fa-brands fa-instagram text-4xl md:text-5xl hover:scale-105"></i></a>
+                    <a href="" class="icon-3 md:absolute top-48 left-88"><i class="fa-brands fa-linkedin text-4xl md:text-5xl hover:scale-105"></i></a>
+                    <a href="" class="icon-4 md:absolute top-32 right-36"><i class="fa-brands fa-github text-4xl md:text-5xl hover:scale-105"></i></a>
+                    <a href="" class="icon-5 md:absolute top-5 right-5"><i class="fa-brands fab fa-twitter text-4xl md:text-5xl hover:scale-105"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <div class="py-4">
+        <p class="bg-black text-gray-100 text-center tracking-wider font-thin text-xs md:text-lg">Thanks for visiting</p>
+    </div>
+
+    <!-- ---------------------------------SCRIPT------------------------------------- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>

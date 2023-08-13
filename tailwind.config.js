@@ -15,6 +15,9 @@ module.exports = {
       height:{
         'custom':'44rem',
         'about':'300px'
+      },
+      inset:{
+        '88':'22rem'
       }
     },
   },
