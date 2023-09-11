@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
-    <!-- <link rel="icon" href="https://www.crushpixel.com/static18/preview2/portfolio-sketch-neon-icon-simple-3020478.jpg"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <style>
     body::-webkit-scrollbar {
@@ -30,7 +30,7 @@
     }
 
     .active {
-        border-bottom: 3px solid yellow;
+        border-bottom: 3px solid rgb(147, 51, 234);
     }
 
     .top-14 {
@@ -56,32 +56,33 @@
     }
 </style>
 
-<body class="font-body bg-black">
+<body class="font-body bg-gray-900">
 
     <!-- -----------------------------------NAVBAR---------------------------- -->
 
     <nav
-        class="navbar flex justify-around items-center px-0 md:py-2 bg-black py-3 fixed top-0 w-full shadow-sm shadow-white z-40">
-        <div class="logo tracking-wider font-bold text-2xl md:text-4xl font-serif bg-black font-logo">
-            <a href="#home"> <span class="text-yellow-300 ">Sahil's </span><span class="text-white">
+        class="navbar flex justify-around items-center px-0 md:py-2 bg-gray-800 py-3 fixed top-0 w-full shadow-sm shadow-white z-40">
+        <div class="logo tracking-wider font-bold text-2xl md:text-4xl font-serif bg-gray-800 font-logo"
+            data-aos="fade-right" data-aos-offset="400" data-aos-duration="1000">
+            <a href="#home"> <span class="text-purple-600 ">Sahil's </span><span class="text-white">
                     Portfolio</span></a>
         </div>
         <ul
-            class="font-body nav-items transition-all duration-500 flex-col absolute md:static md:w-auto md:text-xl md:flex-row -top-72 items-center bg-black w-full md:flex flex z-50">
+            class="font-body nav-items transition-all duration-500 flex-col absolute md:static md:w-auto md:text-xl md:flex-row -top-72 items-center bg-gray-800 w-full md:flex flex z-50">
             <li class="list-items px-4 font-bold capitalize py-4 ">
-                <a href="#home" class="tracking-widest text-yellow-300 active">home</a>
+                <a href="#home" class="tracking-widest text-purple-600 active">home</a>
             </li>
             <li class="list-items px-4 font-bold capitalize py-4">
-                <a href="#about" class="tracking-widest text-yellow-300">about</a>
+                <a href="#about" class="tracking-widest text-purple-600">about</a>
             </li>
             <li class="list-items px-4 font-bold capitalize py-4">
-                <a href="#skills" class="tracking-widest text-yellow-300">skills</a>
+                <a href="#skills" class="tracking-widest text-purple-600">skills</a>
             </li>
             <li class="list-items px-4 font-bold capitalize py-4">
-                <a href="#projects" class="tracking-widest text-yellow-300">projects</a>
+                <a href="#projects" class="tracking-widest text-purple-600">projects</a>
             </li>
             <li class="list-items px-4 font-bold capitalize py-4">
-                <a href="#contact" class="tracking-widest text-yellow-300 ">contact me</a>
+                <a href="#contact" class="tracking-widest text-purple-600 ">contact me</a>
             </li>
         </ul>
         <div class="md:hidden cursor-pointer menu" onclick="showMenu(this)">
@@ -98,24 +99,25 @@
 
 
     <section id="home"
-        class="md:h-screen h-custom mt-xxl md:pt-2 md:mt-4 pt-0 bg-black flex flex-col-reverse md:flex-row pb-2">
-        <div
+        class="md:h-screen h-custom mt-xxl md:pt-2 md:mt-4 pt-0 bg-gray-900 flex flex-col-reverse md:flex-row pb-2">
+        <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500"
             class="text1 md:text-5xl text-3xl md:tracking-wider font-semibold  text-white tracking-tighter font-serif md:w-1/2 flex flex-col items-center justify-center">
             <div class="pl-4">
-                <div>Hi, I'm <span class="text-yellow-300 underline">Sahil kumar</span><span>
+                <div>Hi, I'm <span class="text-purple-600 underline">Sahil kumar</span><span>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
                 <div class="my-4">and I'm a</div>
-                <span id="element" class="mt-2 tracking-wide text-yellow-300 font-bold font-my-text"></span>
+                <span id="element" class="mt-2 tracking-wide text-purple-600 font-bold font-my-text"></span>
                 <div class="mt-8 md:mt-6 ">
-                    <button
-                        class="bg-yellow-300 text-sm md:text-lg p-1 md:px-2 md:py-2 text-black rounded-full hover:bg-yellow-400 border-2 border-solid border-white hover:text-white font-bold tracking-wide">Download
-                        CV</button>
+                    <a href="" download
+                        class="bg-purple-600 text-sm md:text-lg p-1 md:px-2 md:py-2 text-white rounded-full hover:bg-purple-400 border-2 border-solid border-white hover:text-white font-bold tracking-wide">Download
+                        CV</a>
                 </div>
             </div>
         </div>
-        <div class="photo h-full md:w-1/2 w-full flex items-center justify-center">
+        <div class="photo h-full md:w-1/2 w-full flex items-center justify-center" data-aos="zoom-in"
+            data-aos-duration="1000">
             <div class="md:w-full w-60 flex items-center justify-center">
-                <img src="/img/my profile photo.jpg"
+                <img src="/img/my profile.png"
                     class=" rounded-full p-4 md:w-1/2 border-2 border-solid border-white">
             </div>
         </div>
@@ -124,9 +126,9 @@
 
     <!-- ---------------------------------ABOUT------------------------------------- -->
 
-    <section id="about" class="bg-black text-white pt-24 pb-2">
+    <section id="about" class="bg-gray-900 text-white pt-24 pb-2">
         <div>
-            <h1 class="md:text-4xl text-3xl font-bold text-yellow-300 text-center">ABOUT</h1>
+            <h1 class="md:text-4xl text-3xl font-bold text-purple-600 text-center">ABOUT</h1>
             <div class="my-4">
                 <p class="md:text-2xl font-about text-center">
                     I'm Sahil Kumar from the capital of Bihar , Patna. Currently pursuing my
@@ -135,29 +137,29 @@
             </div>
         </div>
         <div class="text-center py-4">
-            <p class="text-xl md:text-2xl md:font-bold text-yellow-300">EDUCATION DEATAILS</p>
+            <p class="text-xl md:text-2xl md:font-bold text-purple-600">EDUCATION DEATAILS</p>
         </div>
         <div class="flex flex-col md:flex-row items-center justify-center px-4 md:px-12">
-            <div
-                class="education-1 lg:h-about md:h-auto md:h md:w-4/12 border-2 border-solid border-yellow-300 m-2 p-2 text-center tracking-wide mt-4">
-                <h1 class="md:text-3xl text-2xl text-yellow-300 py-4 font-bold">MATRICULATION (10th)</h1>
+            <div data-aos="flip-right" data-aos-duration="1000"
+                class="education-1 lg:h-about md:h-auto md:h md:w-4/12 border-2 border-solid border-purple-600 m-2 p-2 text-center tracking-wide mt-4">
+                <h1 class="md:text-3xl text-2xl text-purple-600 py-4 font-bold">MATRICULATION (10th)</h1>
                 <p class="font-about md:text-2xl">
                     I've completed my matriculation from a government school , Marwari High School.
                     I've successfully cleared my matriculation exam in the year 2020 with 73% marks.
                 </p>
             </div>
-            <div
-                class="education-2 md:h-about md:h md:w-4/12 border-2 border-solid border-yellow-300 m-2 p-2 text-center tracking-wide mt-4">
-                <h1 class="text-2xl md:text-3xl text-yellow-300 py-4 font-bold">INTERMIDIATE (12th)</h1>
+            <div data-aos="flip-right" data-aos-duration="1000" data-aos-delay="500"
+                class="education-2 md:h-about md:h md:w-4/12 border-2 border-solid border-purple-600 m-2 p-2 text-center tracking-wide mt-4">
+                <h1 class="text-2xl md:text-3xl text-purple-600 py-4 font-bold">INTERMIDIATE (12th)</h1>
                 <p class="font-about md:text-2xl">
                     After clearing my matric exam I've taken addmission in T.P.S COLLEGE to pursue my
                     intermidiate with science stream (MATH) and successfully passed the exam in year 2022
                     scoring 83.2% parks.
                 </p>
             </div>
-            <div
-                class="education-3 md:h-about md:h md:w-4/12 border-2 border-solid border-yellow-300 m-2 p-2 text-center tracking-wide mt-4">
-                <h1 class="text-2xl md:text-3xl text-yellow-300 py-4 font-bold">GRADUATION (B.C.A)</h1>
+            <div data-aos="flip-right" data-aos-duration="1000" data-aos-delay="800"
+                class="education-3 md:h-about md:h md:w-4/12 border-2 border-solid border-purple-600 m-2 p-2 text-center tracking-wide mt-4">
+                <h1 class="text-2xl md:text-3xl text-purple-600 py-4 font-bold">GRADUATION (B.C.A)</h1>
                 <p class="font-about md:text-2xl">
                     After scoring good marks in intermidiate I've taken addmission in College of Commerce to
                     pursue graduation in B.C.A and heading forwards towards to be software engineer, and a future
@@ -171,64 +173,69 @@
 
     <!-- ---------------------------------SKILLS------------------------------------------- -->
 
-    <section id="skills" class="bg-black text-white w-full pt-24 pb-4">
-        <h1 class="text-3xl md:text-4xl font-bold text-center text-yellow-300">SKILLS</h1>
+    <section id="skills" class="bg-gray-900 text-white w-full pt-24 pb-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-purple-600">SKILLS</h1>
         <div class="w-full font-bold md:grid md:grid-cols-2 md:text-2xl md:place-items-center">
             <div class="md:w-10/12 ">
-                <div class="w-full px-4 my-4 skill-1">
+                <div class="w-full px-4 my-4 skill-1" data-aos="fade-right" data-aos-duration="1000">
                     <div class="w-full flex justify-between py-2">
                         <div class="">HTML</div>
                         <div class="">80%</div>
                     </div>
                     <div class="w-full h-2 bg-gray-700 rounded-full">
-                        <div class="w-4/5 h-full rounded-full bg-yellow-300"></div>
+                        <div class="w-4/5 h-full rounded-full bg-purple-600"></div>
                     </div>
                 </div>
-                <div class="w-full px-4 my-4 skill-2">
+                <div class="w-full px-4 my-4 skill-2" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-delay="200">
                     <div class="w-full flex justify-between py-2 ">
                         <div class="">CSS</div>
                         <div class="">95%</div>
                     </div>
                     <div class="w-full h-2 bg-gray-700 rounded-full">
-                        <div class="w-11/12 h-full rounded-full bg-yellow-300"></div>
+                        <div class="w-11/12 h-full rounded-full bg-purple-600"></div>
                     </div>
                 </div>
-                <div class="w-full px-4 my-4 skill-3">
+                <div class="w-full px-4 my-4 skill-3" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-delay="400">
                     <div class="w-full flex justify-between py-2">
                         <div class="">JAVASCRIPT</div>
                         <div class="">75%</div>
                     </div>
                     <div class="w-full h-2 bg-gray-700 rounded-full">
-                        <div class="w-3/4 h-full rounded-full bg-yellow-300"></div>
+                        <div class="w-3/4 h-full rounded-full bg-purple-600"></div>
                     </div>
                 </div>
             </div>
             <div class="md:w-10/12 ">
-                <div class="w-full px-4 my-4 skill-4">
+                <div class="w-full px-4 my-4 skill-4" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-delay="600">
                     <div class="w-full flex justify-between py-2">
                         <div class="">REACT JS</div>
                         <div class="">60%</div>
                     </div>
                     <div class="w-full h-2 bg-gray-700 rounded-full">
-                        <div class="w-3/5 h-full rounded-full bg-yellow-300"></div>
+                        <div class="w-3/5 h-full rounded-full bg-purple-600"></div>
                     </div>
                 </div>
-                <div class="w-full px-4 my-4 skill-5">
+                <div class="w-full px-4 my-4 skill-5" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-delay="800">
                     <div class="w-full flex justify-between py-2">
                         <div class="">C++</div>
                         <div class="">50%</div>
                     </div>
                     <div class="w-full h-2 bg-gray-700 rounded-full">
-                        <div class="w-1/2 h-full rounded-full bg-yellow-300"></div>
+                        <div class="w-1/2 h-full rounded-full bg-purple-600"></div>
                     </div>
                 </div>
-                <div class="w-full px-4 my-4 skill-6">
+                <div class="w-full px-4 my-4 skill-6" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-delay="1000">
                     <div class="w-full flex justify-between py-2">
                         <div class="">MONGO DB</div>
                         <div class="">20%</div>
                     </div>
                     <div class="w-full h-2 bg-gray-700 rounded-full">
-                        <div class="w-1/5 h-full rounded-full bg-yellow-300"></div>
+                        <div class="w-1/5 h-full rounded-full bg-purple-600"></div>
                     </div>
                 </div>
 
@@ -241,15 +248,16 @@
 
     <!-- ---------------------------------PROJECTS-------------------------------------- -->
 
-    <section id="projects" class="bg-black text-white pt-24">
-        <h1 class="text-3xl md:text-4xl font-bold text-center text-yellow-300">PROJECTS</h1>
+    <section id="projects" class="bg-gray-900 text-white pt-24">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-purple-600">PROJECTS</h1>
         <div class="flex justify-center flex-col items-center mt-8">
-            <div class="rounded-lg project-1 border-2 border-solid border-yellow-300 w-11/12 p-2 md:flex md:w-7/12">
+            <div class="rounded-lg project-1 border-2 border-solid border-purple-600 w-11/12 p-2 md:flex md:w-7/12"
+                data-aos="flip-down" data-aos-duration="1000">
                 <div class="w-full p-1 h-40 md:h-80 border-2 border-solid border-white object-contain">
                     <img src="/img/tic-tac-toe.png" class="w-full h-full object-contain">
                 </div>
                 <div class="md:ml-2 relative">
-                    <div class="font-bold text-2xl text-yellow-300 md:text-4xl ">
+                    <div class="font-bold text-2xl text-purple-600 md:text-4xl ">
                         Tic-Tac-Toe Game
                     </div>
                     <div class="description font-thin text-xs md:text-lg md:mt-4 text-gray-200">
@@ -258,11 +266,11 @@
                     </div>
                     <div class=" flex justify-between text-xs md:text-lg md:absolute bottom-2 w-full">
                         <button
-                            class="border-2 border-solid border-yellow-300 rounded-full p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
+                            class="border-2 border-solid border-purple-600 rounded-full p-1 mt-4 font-bold hover:bg-purple-600 hover:text-black"><a
                                 href="https://sahiltic-tac-toegame.netlify.app/" target="_blank">View
                                 Project</a></button>
                         <button
-                            class="border-2 border-solid border-yellow-300 rounded-full  p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
+                            class="border-2 border-solid border-purple-600 rounded-full  p-1 mt-4 font-bold hover:bg-purple-600 hover:text-black"><a
                                 href="https://github.com/sahil-kumar-dev/tic-tac-toe" target="_blank">Get Source
                                 Code</a></button>
                     </div>
@@ -271,13 +279,13 @@
 
 
 
-            <div
-                class="rounded-lg project-2 border-2 border-solid border-yellow-300 w-11/12 p-2 md:flex md:w-7/12 mt-8">
+            <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200"
+                class="rounded-lg project-2 border-2 border-solid border-purple-600 w-11/12 p-2 md:flex md:w-7/12 mt-8">
                 <div class="w-full p-1 h-40 md:h-80 border-2 border-solid border-white object-contain">
                     <img src="/img/weather app.png" class="w-full h-full object-contain">
                 </div>
                 <div class="md:ml-2 relative">
-                    <div class="font-bold text-2xl text-yellow-300 md:text-4xl ">
+                    <div class="font-bold text-2xl text-purple-600 md:text-4xl ">
                         Weather app
                     </div>
                     <div class="description font-thin text-xs md:text-lg md:mt-4 text-gray-200">
@@ -286,11 +294,11 @@
                     </div>
                     <div class=" flex justify-between text-xs md:text-lg md:absolute bottom-2 w-full">
                         <button
-                            class="border-2 border-solid border-yellow-300 rounded-full p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
+                            class="border-2 border-solid border-purple-600 rounded-full p-1 mt-4 font-bold hover:bg-purple-600 hover:text-black"><a
                                 href="https://my-newweatherapp.netlify.app/" target="_blank">View
                                 Project</a></button>
                         <button
-                            class="border-2 border-solid border-yellow-300 rounded-full  p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
+                            class="border-2 border-solid border-purple-600 rounded-full  p-1 mt-4 font-bold hover:bg-purple-600 hover:text-black"><a
                                 href="https://github.com/sahil-kumar-dev/myweatharapp" target="_blank">Get Source
                                 Code</a></button>
                     </div>
@@ -299,13 +307,13 @@
 
 
 
-            <div
-                class="rounded-lg project-2 border-2 border-solid border-yellow-300 w-11/12 p-2 md:flex md:w-7/12 mt-8">
+            <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="400"
+                class="rounded-lg project-2 border-2 border-solid border-purple-600 w-11/12 p-2 md:flex md:w-7/12 mt-8">
                 <div class="w-full p-1 h-40 md:h-80 border-2 border-solid border-white object-contain">
                     <img src="/img/password.png" class="w-full h-full object-contain">
                 </div>
                 <div class="md:ml-2 relative">
-                    <div class="font-bold text-2xl text-yellow-300 md:text-4xl ">
+                    <div class="font-bold text-2xl text-purple-600 md:text-4xl ">
                         Password Generator
                     </div>
                     <div class="description font-thin text-xs md:text-lg md:mt-4 text-gray-200">
@@ -314,11 +322,11 @@
                     </div>
                     <div class=" flex justify-between text-xs md:text-lg md:absolute bottom-2 w-full">
                         <button
-                            class="border-2 border-solid border-yellow-300 rounded-full p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
+                            class="border-2 border-solid border-purple-600 rounded-full p-1 mt-4 font-bold hover:bg-purple-600 hover:text-black"><a
                                 href="https://password-generator-new.netlify.app/" target="_blank">View
                                 Project</a></button>
                         <button
-                            class="border-2 border-solid border-yellow-300 rounded-full  p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
+                            class="border-2 border-solid border-purple-600 rounded-full  p-1 mt-4 font-bold hover:bg-purple-600 hover:text-black"><a
                                 href="https://github.com/sahil-kumar-dev/Password-generator" target="_blank">Get Source
                                 Code</a></button>
                     </div>
@@ -327,13 +335,13 @@
 
 
 
-            <div
-                class="rounded-lg project-2 border-2 border-solid border-yellow-300 w-11/12 p-2 md:flex md:w-7/12 mt-8">
+            <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="600"
+                class="rounded-lg project-2 border-2 border-solid border-purple-600 w-11/12 p-2 md:flex md:w-7/12 mt-8">
                 <div class="w-full p-1 h-40 md:h-80 border-2 border-solid border-white object-contain">
                     <img src="/img/image.png" class="w-full h-full object-contain">
                 </div>
                 <div class="md:ml-2 relative">
-                    <div class="font-bold text-2xl text-yellow-300 md:text-4xl ">
+                    <div class="font-bold text-2xl text-purple-600 md:text-4xl ">
                         Image Gallery
                     </div>
                     <div class="description font-thin text-xs md:text-lg md:mt-4 text-gray-200">
@@ -342,11 +350,11 @@
                     </div>
                     <div class=" flex justify-between text-xs md:text-lg md:absolute bottom-2 w-full">
                         <button
-                            class="border-2 border-solid border-yellow-300 rounded-full p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
+                            class="border-2 border-solid border-purple-600 rounded-full p-1 mt-4 font-bold hover:bg-purple-600 hover:text-black"><a
                                 href="https://randon-image-gallery.netlify.app" target="_blank">View
                                 Project</a></button>
                         <button
-                            class="border-2 border-solid border-yellow-300 rounded-full  p-1 mt-4 font-bold hover:bg-yellow-300 hover:text-black"><a
+                            class="border-2 border-solid border-purple-600 rounded-full  p-1 mt-4 font-bold hover:bg-purple-600 hover:text-black"><a
                                 href="https://github.com/sahil-kumar-dev/Image-gallery" target="_blank">Get Source
                                 Code</a></button>
                     </div>
@@ -358,57 +366,74 @@
 
     <!-- ---------------------------------CONTACT ME------------------------------------- -->
 
-    <section id="contact" class="bg-black text-white pt-24">
-        <h1 class="my-8 md:text-4xl text-3xl font-bold text-yellow-300 text-center">CONTACT ME</h1>
+    <section id="contact" class="bg-gray-900 text-white pt-24">
+        <h1 class="my-8 md:text-4xl text-3xl font-bold text-purple-600 text-center">CONTACT ME</h1>
         <div class="flex flex-col md:flex-row-reverse md:py-12 ">
-            <div class="form md:w-1/2 md:h-auto left">
-                <form  name="getDetails" netlify action="formSubmit.html"
-                    class="flex flex-col items-center border-2 border-double border-yellow-300 py-4 px-8 m-2 ">
-                    <div class="text relative border-b-2 border-solid border-yellow-300 w-4/5 my-8">
-                        <input type="text" name="name" id="username" class="bg-black w-full" required>
+            <div class="form md:w-1/2 md:h-auto left" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <form name="getDetails" netlify action="formSubmit.html"
+                    class="flex flex-col items-center border-2 border-double border-purple-600 py-4 px-8 m-2 ">
+                    <div class="text relative border-b-2 border-solid border-purple-600 w-4/5 my-8">
+                        <input type="text" name="name" id="username" class="bg-gray-900 w-full" required>
                         <label for="username"
-                            class="text-yellow-300 transition-all duration-500 absolute top-0 left-0">Your
+                            class="text-white transition-all duration-500 absolute top-0 left-0">Your
                             Name</label>
                     </div>
-                    <div class="email relative border-b-2 border-solid border-yellow-300 w-4/5 my-8">
-                        <input type="text" name="email" id="mail" class="bg-black w-full" required>
-                        <label for="mail" class="text-yellow-300 transition-all duration-500 absolute top-0 left-0">Your
+                    <div class="email relative border-b-2 border-solid border-purple-600 w-4/5 my-8">
+                        <input type="text" name="email" id="mail" class="bg-gray-900 w-full" required>
+                        <label for="mail" class="text-white transition-all duration-500 absolute top-0 left-0">Your
                             Email-Id</label>
                     </div>
-                    <div class="number relative border-b-2 border-solid border-yellow-300 w-4/5 my-8">
-                        <input type="text" name="contact no." id="contact" class="bg-black w-full" required>
+                    <div class="number relative border-b-2 border-solid border-purple-600 w-4/5 my-8">
+                        <input type="text" name="contact no." id="contact" class="bg-gray-900 w-full" required>
                         <label for="contact"
-                            class="text-yellow-300 transition-all duration-500 absolute top-0 left-0">Your
+                            class="text-white transition-all duration-500 absolute top-0 left-0">Your
                             contact No.</label>
                     </div>
                     <div class="submit">
-                      <!-- <a href="formSubmit.html" >  -->
-                         <input type="submit" 
-                            class="border-2 border-solid bg-yellow-300 px-2 py-1 text-black font-bold rounded-md"></input>
+                        <!-- <a href="formSubmit.html" >  -->
+                        <input type="submit"
+                            class="border-2 border-solid bg-purple-600 px-2 py-1 text-black font-bold rounded-md"></input>
                         <!-- </a> -->
                     </div>
                 </form>
             </div>
-            <div class="right social-links md:w-1/2 p-4  m-2 border-2 border-solid border-yellow-300">
-                <h2 class="my-4 text-2xl md:text-3xl font-bold text-center tracking-wider text-yellow-300">Social Links</h2>
+            <div class="right social-links md:w-1/2 p-4  m-2 border-2 border-solid border-purple-600"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <h2 class="my-4 text-2xl md:text-3xl font-bold text-center tracking-wider text-purple-600">Social Links
+                </h2>
                 <div class="relative flex items-center justify-around py-4 md:block ">
-                    <a href="" class="icon-1 md:absolute top-5 left-5"><i class="fa-brands fa-facebook text-4xl md:text-5xl hover:scale-105"></i></a>
-                    <a href="" class="icon-2 md:absolute top-32 left-36"><i class="fa-brands fa-instagram text-4xl md:text-5xl hover:scale-105"></i></a>
-                    <a href="" class="icon-3 md:absolute top-48 left-88"><i class="fa-brands fa-linkedin text-4xl md:text-5xl hover:scale-105"></i></a>
-                    <a href="" class="icon-4 md:absolute top-32 right-36"><i class="fa-brands fa-github text-4xl md:text-5xl hover:scale-105"></i></a>
-                    <a href="" class="icon-5 md:absolute top-5 right-5"><i class="fa-brands fab fa-twitter text-4xl md:text-5xl hover:scale-105"></i></a>
+                    <a href="" class="icon-1 md:absolute top-5 left-5"><i
+                            class="fa-brands fa-facebook text-4xl md:text-5xl hover:scale-105"></i></a>
+                    <a href="" class="icon-2 md:absolute top-32 left-36"><i
+                            class="fa-brands fa-instagram text-4xl md:text-5xl hover:scale-105"></i></a>
+                    <a href="" class="icon-3 md:absolute top-48 left-88"><i
+                            class="fa-brands fa-linkedin text-4xl md:text-5xl hover:scale-105"></i></a>
+                    <a href="" class="icon-4 md:absolute top-32 right-36"><i
+                            class="fa-brands fa-github text-4xl md:text-5xl hover:scale-105"></i></a>
+                    <a href="" class="icon-5 md:absolute top-5 right-5"><i
+                            class="fa-brands fab fa-twitter text-4xl md:text-5xl hover:scale-105"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <div class="py-4">
-        <p class="bg-black text-gray-100 text-center tracking-wider font-thin text-xs md:text-lg">Thanks for visiting</p>
+        <p class="bg-gray-900 text-gray-100 text-center tracking-wider font-thin text-xs md:text-lg">Thanks for visiting
+        </p>
     </div>
 
     <!-- ---------------------------------SCRIPT------------------------------------- -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
     <script src="script.js"></script>
 </body>
 
